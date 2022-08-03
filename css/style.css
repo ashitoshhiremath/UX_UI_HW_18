@@ -26,7 +26,11 @@ time, mark, audio, video {
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-	display: block;
+	display: display: grid;
+    grid-template-columns: 1fr repeat(12, minmax (auto, 60px)) 1fr;
+    grid-gap: 10px;
+    padding: 30px 0;
+;
 }
 body {
 	line-height: 1;
@@ -294,6 +298,7 @@ footer ul li a:hover {
 }
 
 .skills {
+    display flex;
     background-color: #F7F7F7;
     padding: 96px 24px;
 }
@@ -333,6 +338,7 @@ footer ul li a:hover {
 }
 
 .portfolio .container {
+    display: grid;
     max-width: 1200px;
     margin: 0 auto;
     width: 100%;
@@ -344,8 +350,8 @@ footer ul li a:hover {
 }
 
 .portfolio-list {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-gap: auto;
     justify-content: center;
 }
 
